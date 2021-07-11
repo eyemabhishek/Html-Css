@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "PT Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("image/benoit-dare-wPXEQz40f8s-unsplash.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+
+  /* background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%); */
+}
+
+.conatiner {
+  opacity:0.9;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 2.8px 2.2px rgba(27, 20, 20, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0.12;
+  /* width: calc(100vw-65vw); */
+  /* max-width: 100%; */
+  width:40%;
+}
+.header {
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  padding: 30px 0;
+}
+
+.header h2 {
+  color: hsl(336, 79%, 46%);
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.form {
+  padding: 40px 0;
+}
+.form-control {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form-control label {
+  margin-bottom: 5px;
+  margin-left:5px;
+  display: inline-block;
+}
+.form-control input:focus {
+  outline: 0;
+  border-color: aqua;
+  opacity:0.9;
+}
+.form-control input:hover {
+  box-shadow: 10px 5px 5px rgb(190, 190, 190);
+  transition: all 0.5s ease;
+}
+.form-control.success input {
+
+  border-color:#2ecc71;
+}
+.form-control.error input {
+  border-color:#e74c3c;
+}
+.form-control i {
+  position:absolute;
+  right:-14px;
+  top:42px;
+  visibility:hidden;
+}
+.form-control small {
+  color: #e74c3c;
+  visibility:hidden;
+  position:absolute;
+  left:10px;
+  bottom:-21px;
+
+ 
+
+}
+
+
+
+.form-control.error small{
+
+  visibility:visible;
+
+}
+.form-control.success , i.fa-check-circle{
+
+ color: #2ecc71;
+ visibility:visible;
+}
+.form-control.error, i.fa-exclamation-circle{
+
+ color: #e74c3c;
+ visibility:visible;
+}
+
+
+.form-control input {
+  width: 100%;
+  border: 2px solid #f0f0f0;
+  /* display: block; */
+  font-family: "PT Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.form .btn {
+  border: none;
+  outline: none;
+  display: block;
+  color: hsl(336, 79%, 46%);
+  font-weight: 800;
+  /* border-radius: 6px; */
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  padding: 15px 0;
+  margin-top: 30px;
+  width:100%;
+  transition: all 1s ease;
+  background: linear-gradient(to right, #74ebd5, #9face6);
+}
+
+.form .btn:hover {
+  background: linear-gradient(0.25turn, #3f87a6, #b0f879, #f69d3c);
+}
+@media (max-width: 998px) {
+  .container {
+    width: calc(100vw-35vw);
+    max-width: 100%;
+  }
+}
